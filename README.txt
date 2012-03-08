@@ -1,0 +1,3 @@
+Erin Rasmussen	
+
+	Artifacts of demosaicing are visible around the edge of the picture. These are caused by taking the average of the imfilter mask. Since the mask excepts the average of 4 neighboring pixels, the average calculation is off because the edge pixels may only have 2 neighboring pixels. The image I have provided (crayons_demo_artifact.jpg) shows demosaicing artifacts between the blue and yellow crayon in the lower left of the main picture. This is likely caused by an outlier in calculating the average since the neighbor pixels are of high contrast to each other. 
